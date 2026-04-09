@@ -168,7 +168,7 @@ data/
 ### 5. Notebook'u Çalıştır
 
 ```bash
-jupyter notebook blackfriday.ipynb
+jupyter notebook notebooks/blackfriday.ipynb
 ```
 
 ---
@@ -188,6 +188,7 @@ xgboost
 catboost
 optuna
 ipython
+joblib
 ```
 
 > 💡 `requirements.txt` dosyası repo içinde mevcuttur.
@@ -199,14 +200,29 @@ ipython
 ```
 blackfriday-sales-predictor/
 │
-├── 📓 blackfriday.ipynb        # Ana notebook — tüm pipeline
+├── 📄 README.md                # Proje açıklaması
 ├── 📄 requirements.txt         # Bağımlılıklar
-├── 📁 data/
+│
+├── 📁 data/                    # Veri dosyaları
 │   ├── train.csv               # Eğitim verisi
-│   └── test.csv                # Test verisi
-├── 📁 outputs/
-│   └── submission.csv          # Final tahminler
-└── 📄 README.md
+│   ├── test.csv                # Test verisi
+│   └── submission.csv          # Final tahminler (notebook çalıştıktan sonra)
+│
+├── 📁 notebooks/               # Jupyter Notebook çalışmaları
+│   └── blackfriday.ipynb       # Ana notebook — tüm pipeline
+│
+├── 📁 models/                  # Model dosyaları
+│   └── final_model.pkl         # Eğitilmiş final model (notebook çalıştıktan sonra)
+│
+└── 📁 figures/                 # Grafik çıktıları
+    ├── missing_values_pie.png  # Eksik değer pasta grafiği
+    ├── gender_distribution.png # Cinsiyet dağılımı
+    ├── age_distribution.png    # Yaş dağılımı
+    ├── correlation_heatmap.png # Korelasyon haritası
+    ├── urun_kategorileri.png   # Ürün kategorileri
+    ├── feature_importance.png  # Özellik önem sıralaması
+    ├── optuna_history.png      # Optuna optimizasyon geçmişi
+    └── prediction_distribution.png  # Tahmin dağılımı
 ```
 
 ---
