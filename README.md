@@ -301,6 +301,15 @@ Kaynak göstermen yeterli. 🙏
 ```
 
 ---
+## 👥 Ekip
+
+Bu proje aşağıdaki kişiler tarafından birlikte geliştirilmiştir:
+
+| İsim | GitHub |
+|---|---|
+| **Sen (proje sahibi)** | [@Emrecaglar05](https://github.com/Emrecaglar05) |
+| **Mustafa Kocaman** | [@MustafaKocamann](https://github.com/MustafaKocamann) |
+| **Yağız Ayık** | [@yyagzayk](https://github.com/yyagzayk) |
 
 ## 🙏 Teşekkür & Referanslar
 
